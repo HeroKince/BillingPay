@@ -345,6 +345,10 @@ public class BillingManager implements PurchasesUpdatedListener {
         }
     }
 
+    public boolean isIsServiceConnected() {
+        return mIsServiceConnected;
+    }
+
     /**
      * 回收资源
      */
