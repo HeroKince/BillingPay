@@ -141,4 +141,4 @@ SDK已经增加了混淆配置，原则上无须添加以下配置。若混淆�
 
 参考：
 
-+ https://github.com/pengfeigao/GoogleBilling
+- https://github.com/pengfeigao/GoogleBilling
