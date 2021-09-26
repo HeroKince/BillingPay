@@ -1,0 +1,3 @@
+rootProject.name = "AndroidBilling"
+include ':app'
+include ':library'
