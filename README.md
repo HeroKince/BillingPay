@@ -5,7 +5,7 @@
 - 在app build.gradle添加依赖
 
 ```
-implementation 'com.github.Geekince:BillingPay:1.0.1'
+implementation 'com.github.Geekince:BillingPay:V1.0.1'
 ```
 
 #### 使用
