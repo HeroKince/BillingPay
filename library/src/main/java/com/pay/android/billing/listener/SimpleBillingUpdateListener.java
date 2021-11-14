@@ -3,19 +3,13 @@ package com.pay.android.billing.listener;
 import com.android.billingclient.api.BillingResult;
 import com.android.billingclient.api.Purchase;
 import com.android.billingclient.api.PurchaseHistoryRecord;
-import com.android.billingclient.api.SkuDetails;
 
 import java.util.List;
 
 public abstract class SimpleBillingUpdateListener extends BaseBillingUpdateListener {
 
     @Override
-    public void onPurchaseHistoryResponse(BillingResult billingResult, List<PurchaseHistoryRecord> list) {
-
-    }
-
-    @Override
-    public void onQuerySkuDetailSuccess(List<SkuDetails> skuDetailsList) {
+    public void onBillingServiceDisconnected() {
 
     }
 
@@ -25,24 +19,13 @@ public abstract class SimpleBillingUpdateListener extends BaseBillingUpdateListe
     }
 
     @Override
-    public void onConsumeFinished(String token, BillingResult result) {
+    public void onPurchaseHistoryResponse(BillingResult billingResult, List<PurchaseHistoryRecord> list) {
 
     }
 
     @Override
-    public void onAcknowledgePurchaseResponse(BillingResult result) {
+    public void onPurchasesUpdated(List<Purchase> purchases) {
 
     }
 
-    @Override
-    public abstract void onBillingClientSetupFinished();
-
-    @Override
-    public abstract void onPurchasesUpdated(List<Purchase> purchases);
-
-    @Override
-    public abstract void onPurchasesCancel();
-
-    @Override
-    public abstract void onPurchasesFailure(int errorCode, String message);
 }
